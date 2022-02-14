@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var a = prompt ('Nhap gia tri cua a')
+	var b = prompt ('Nhap gia tri cua b')
+	var c = prompt ('Nhap gia tri cua c')
+	var delta = b*b-4*a*c
+
+	if(a == 0){
+		if(b==0){
+			if(c==0){
+				alert('ptvsn')
+			}else{
+				alert('ptvn')
+			}
+		}else{
+			alert('pt co nghiem'+x(-c/a))
+		}
+	}else{
+      if(delta<0){
+      	alert('ptvn')
+      }else if(delta==0){
+      	var sum=-b/2*a
+      	alert('pt co nghiem x1=x2=' +sum)
+      }else(delta>0){
+       var x1= (-b+Math.sqrt(delta))/(2*a)
+       var x2= (-b-Math.sqrt(delta))/(2*a)
+       alert('pt co 2 nghiem phan biet la x1='+x1+ 'va x2='+x2)
+      }
+	}
+</script>
+</body>
+</html>
